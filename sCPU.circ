@@ -18,10 +18,10 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <lib desc="file#Combination_Logic_Circuit.circ" name="12"/>
-  <lib desc="file#Sequential_Logic_Circuit.circ" name="13"/>
-  <lib desc="file#UP_D_Flip_Flop.circ" name="14"/>
-  <main name="main"/>
+  <lib desc="file#UP_D_Flip_Flop.circ" name="12"/>
+  <lib desc="file#Combination_Logic_Circuit.circ" name="13"/>
+  <lib desc="file#Sequential_Logic_Circuit.circ" name="14"/>
+  <main name="sCPU"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -54,9 +54,9 @@
     <tool lib="4" name="D Flip-Flop"/>
     <tool lib="4" name="Register"/>
   </toolbar>
-  <circuit name="main">
+  <circuit name="sCPU">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="main"/>
+    <a name="circuit" val="sCPU"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(1250,2190)" name="Pin">
@@ -336,19 +336,19 @@
     <comp lib="1" loc="(4830,2750)" name="OR Gate">
       <a name="width" val="8"/>
     </comp>
-    <comp lib="12" loc="(1670,990)" name="Hex_7_segment_decoder"/>
-    <comp lib="12" loc="(2590,1320)" name="Decoder_2_4">
+    <comp lib="13" loc="(1670,990)" name="Hex_7_segment_decoder"/>
+    <comp lib="13" loc="(2590,1320)" name="Decoder_2_4">
       <a name="label" val="Opcode"/>
     </comp>
-    <comp lib="12" loc="(2820,1950)" name="Decoder_2_4"/>
-    <comp lib="12" loc="(3260,3590)" name="Decoder_2_4"/>
-    <comp lib="12" loc="(3530,1450)" name="Decoder_2_4"/>
-    <comp lib="12" loc="(5390,2200)" name="Eight_bit_Adder"/>
-    <comp lib="12" loc="(5740,1200)" name="Comparator_8_bit"/>
-    <comp lib="13" loc="(3880,2250)" name="Eight_bit_Register"/>
-    <comp lib="13" loc="(3880,2510)" name="Eight_bit_Register"/>
-    <comp lib="13" loc="(3880,2780)" name="Eight_bit_Register"/>
-    <comp lib="13" loc="(3880,3050)" name="Eight_bit_Register"/>
+    <comp lib="13" loc="(2820,1950)" name="Decoder_2_4"/>
+    <comp lib="13" loc="(3260,3590)" name="Decoder_2_4"/>
+    <comp lib="13" loc="(3530,1450)" name="Decoder_2_4"/>
+    <comp lib="13" loc="(5390,2200)" name="Eight_bit_Adder"/>
+    <comp lib="13" loc="(5740,1200)" name="Comparator_8_bit"/>
+    <comp lib="14" loc="(3880,2250)" name="Eight_bit_Register"/>
+    <comp lib="14" loc="(3880,2510)" name="Eight_bit_Register"/>
+    <comp lib="14" loc="(3880,2780)" name="Eight_bit_Register"/>
+    <comp lib="14" loc="(3880,3050)" name="Eight_bit_Register"/>
     <comp lib="5" loc="(1240,2240)" name="Button"/>
     <comp lib="5" loc="(1770,1070)" name="7-Segment Display"/>
     <comp loc="(1620,1710)" name="PC_Register"/>
@@ -1248,7 +1248,7 @@
       <a name="facing" val="south"/>
       <a name="inputs" val="4"/>
     </comp>
-    <comp lib="12" loc="(650,400)" name="Decoder_2_4"/>
+    <comp lib="13" loc="(650,400)" name="Decoder_2_4"/>
     <wire from="(1010,370)" to="(1060,370)"/>
     <wire from="(1010,450)" to="(1050,450)"/>
     <wire from="(1010,500)" to="(1030,500)"/>
@@ -1686,11 +1686,11 @@
       <a name="inputs" val="4"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="12" loc="(1380,960)" name="Decoder_2_4"/>
-    <comp lib="13" loc="(2440,1260)" name="Eight_bit_Register"/>
-    <comp lib="13" loc="(2440,1520)" name="Eight_bit_Register"/>
-    <comp lib="13" loc="(2440,1790)" name="Eight_bit_Register"/>
-    <comp lib="13" loc="(2440,2060)" name="Eight_bit_Register"/>
+    <comp lib="13" loc="(1380,960)" name="Decoder_2_4"/>
+    <comp lib="14" loc="(2440,1260)" name="Eight_bit_Register"/>
+    <comp lib="14" loc="(2440,1520)" name="Eight_bit_Register"/>
+    <comp lib="14" loc="(2440,1790)" name="Eight_bit_Register"/>
+    <comp lib="14" loc="(2440,2060)" name="Eight_bit_Register"/>
     <wire from="(1070,1290)" to="(1110,1290)"/>
     <wire from="(1070,1310)" to="(1110,1310)"/>
     <wire from="(1070,1330)" to="(1110,1330)"/>
@@ -2018,8 +2018,8 @@
       <a name="facing" val="west"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="12" loc="(1210,880)" name="Four_bit_Adder"/>
-    <comp lib="14" loc="(920,650)" name="Up_Four_Bit_Register"/>
+    <comp lib="12" loc="(920,650)" name="Up_Four_Bit_Register"/>
+    <comp lib="13" loc="(1210,880)" name="Four_bit_Adder"/>
     <wire from="(1020,530)" to="(1520,530)"/>
     <wire from="(1020,540)" to="(1510,540)"/>
     <wire from="(1020,550)" to="(1500,550)"/>
@@ -2506,7 +2506,7 @@
       <a name="facing" val="south"/>
       <a name="inputs" val="8"/>
     </comp>
-    <comp lib="12" loc="(460,400)" name="Decoder_4_16"/>
+    <comp lib="13" loc="(460,400)" name="Decoder_4_16"/>
     <wire from="(1000,370)" to="(1000,920)"/>
     <wire from="(1020,750)" to="(1040,750)"/>
     <wire from="(1020,850)" to="(1040,850)"/>
