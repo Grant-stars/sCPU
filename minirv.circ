@@ -18,10 +18,10 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <lib desc="file#Sequential_Logic_Circuit.circ" name="12"/>
-  <lib desc="file#sCPU.circ" name="13"/>
-  <lib desc="file#Combination_Logic_Circuit.circ" name="14"/>
-  <lib desc="file#UP_D_Flip_Flop.circ" name="15"/>
+  <lib desc="file#Combination_Logic_Circuit.circ" name="12"/>
+  <lib desc="file#UP_D_Flip_Flop.circ" name="13"/>
+  <lib desc="file#Sequential_Logic_Circuit.circ" name="14"/>
+  <lib desc="file#sCPU.circ" name="15"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -566,10 +566,10 @@
     <comp lib="8" loc="(2640,3840)" name="Text">
       <a name="text" val="decide datas which wil be written"/>
     </comp>
-    <comp lib="8" loc="(2640,827)" name="Text">
+    <comp lib="8" loc="(2640,825)" name="Text">
       <a name="text" val="SB"/>
     </comp>
-    <comp lib="8" loc="(2650,1137)" name="Text">
+    <comp lib="8" loc="(2650,1135)" name="Text">
       <a name="text" val="LBU"/>
     </comp>
     <comp lib="8" loc="(2650,1530)" name="Text">
@@ -596,7 +596,7 @@
     <comp lib="8" loc="(2865,4885)" name="Text">
       <a name="text" val="Written datas of LW"/>
     </comp>
-    <comp lib="8" loc="(2878,5010)" name="Text">
+    <comp lib="8" loc="(2875,5010)" name="Text">
       <a name="text" val="Written datas of LBU"/>
     </comp>
     <comp lib="8" loc="(2910,4630)" name="Text">
@@ -1873,22 +1873,22 @@
     </comp>
     <comp lib="0" loc="(1170,630)" name="Constant">
       <a name="facing" val="west"/>
-      <a name="value" val="0x800193"/>
+      <a name="value" val="0x312023"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(1170,650)" name="Constant">
       <a name="facing" val="west"/>
-      <a name="value" val="0xa103"/>
+      <a name="value" val="0x4182b3"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(1170,670)" name="Constant">
       <a name="facing" val="west"/>
-      <a name="value" val="0x1a203"/>
+      <a name="value" val="0x314303"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(1180,610)" name="Constant">
       <a name="facing" val="west"/>
-      <a name="value" val="0x104083"/>
+      <a name="value" val="0x11137"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(1200,1010)" name="Pin">
@@ -1918,17 +1918,22 @@
     </comp>
     <comp lib="0" loc="(1250,620)" name="Constant">
       <a name="facing" val="west"/>
-      <a name="value" val="0x1002a3"/>
+      <a name="value" val="0x7800193"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(1250,640)" name="Constant">
       <a name="facing" val="west"/>
-      <a name="value" val="0xa02223"/>
+      <a name="value" val="0x12203"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(1250,660)" name="Constant">
       <a name="facing" val="west"/>
-      <a name="value" val="0x1a203"/>
+      <a name="value" val="0x5101a3"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(1250,680)" name="Constant">
+      <a name="facing" val="west"/>
+      <a name="value" val="0x14303"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(910,1010)" name="Pin">
@@ -2085,6 +2090,7 @@
     <wire from="(1020,650)" to="(1170,650)"/>
     <wire from="(1020,660)" to="(1250,660)"/>
     <wire from="(1020,670)" to="(1170,670)"/>
+    <wire from="(1020,680)" to="(1250,680)"/>
     <wire from="(1170,1010)" to="(1200,1010)"/>
     <wire from="(1170,1060)" to="(1200,1060)"/>
     <wire from="(1170,1110)" to="(1200,1110)"/>
